@@ -1,25 +1,18 @@
 import Link from "next/link";
-import styled from "styled-components";
 
-const Nav = styled.nav`
-  min-height: 80px;
-  background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+import { FaBars } from "react-icons/fa";
+import { MobileIcon, Nav, StyledLink } from "./NavbarElements";
 
-const StyledLink = styled.a`
-  padding: 0rem 2rem;
-`;
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <div>
         <Link href="/" passHref>
           <StyledLink>Logo</StyledLink>
         </Link>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
       </div>
       <div>
         <Link href="/" passHref>

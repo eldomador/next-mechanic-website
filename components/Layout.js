@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
+import Sidebar from "./Sidebar/Sidebar";
+import React, { useState } from "react";
 
 const Container = styled.div`
   height: 100vh;
@@ -10,9 +12,15 @@ const Container = styled.div`
 `;
 
 export default function Layout({ children }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Container>
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       {children}
       <Footer />
     </Container>

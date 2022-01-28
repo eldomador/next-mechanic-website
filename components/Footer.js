@@ -12,7 +12,7 @@ const FooterSection = styled.div`
 const Footer = () => {
   return (
     <FooterSection>
-      <p>Next 2021 All Rights Reserved</p>
+      <p>Auto Serwis © 2022 All Rights Reserved</p>
     </FooterSection>
   );
 };
