@@ -1,14 +1,16 @@
 import Link from "next/link";
 
 import { FaBars } from "react-icons/fa";
-import { MobileIcon, Nav, StyledLink } from "./NavbarElements";
+import { MobileIcon, Nav, NavIcon, StyledLink } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <div>
         <Link href="/" passHref>
-          <StyledLink>Logo</StyledLink>
+          <StyledLink>
+            <NavIcon src="/logo.svg" />
+          </StyledLink>
         </Link>
         <MobileIcon onClick={toggle}>
           <FaBars />

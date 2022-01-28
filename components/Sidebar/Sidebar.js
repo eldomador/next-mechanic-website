@@ -22,6 +22,9 @@ function Sidebar({ isOpen, toggle }) {
           <Link href={"/"} passHref>
             <SidebarLink onClick={toggle}>Home</SidebarLink>
           </Link>
+          <Link href={"/about"} passHref>
+            <SidebarLink onClick={toggle}>About</SidebarLink>
+          </Link>
         </SidebarMenu>
         <SideBtnWrap>
           <Link href={"/contact"} passHref>

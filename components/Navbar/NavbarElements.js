@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   min-height: 80px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ export const MobileIcon = styled.div`
     display: flex;
     font-size: 26px;
     cursor: pointer;
-    color: #fff;
+    color: #000;
     margin-right: 20px;
   }
 `;
@@ -30,4 +30,8 @@ export const StyledLink = styled.a`
   @media screen and (max-width: 768px) {
     display: none;
   }
+`;
+
+export const NavIcon = styled.img`
+  height: 40px;
 `;
