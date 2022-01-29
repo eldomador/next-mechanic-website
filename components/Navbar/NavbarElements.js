@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Logo from "../Svg/Logo";
 
 export const Nav = styled.nav`
   min-height: 80px;
@@ -32,6 +33,6 @@ export const StyledLink = styled.a`
   }
 `;
 
-export const NavIcon = styled.img`
+export const NavIcon = styled(Logo)`
   height: 40px;
 `;

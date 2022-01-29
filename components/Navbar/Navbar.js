@@ -9,7 +9,7 @@ const Navbar = ({ toggle }) => {
       <div>
         <Link href="/" passHref>
           <StyledLink>
-            <NavIcon src="/logo.svg" />
+            <NavIcon />
           </StyledLink>
         </Link>
         <MobileIcon onClick={toggle}>
