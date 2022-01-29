@@ -1,12 +1,20 @@
 import Link from "next/link";
 
 import { FaBars } from "react-icons/fa";
-import { MobileIcon, Nav, NavIcon, StyledLink } from "./NavbarElements";
+import { Toggle } from "../Toggle";
+import {
+  Column1,
+  Column2,
+  MobileIcon,
+  Nav,
+  NavIcon,
+  StyledLink,
+} from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, theme, toggleTheme }) => {
   return (
     <Nav>
-      <div>
+      <Column1>
         <Link href="/" passHref>
           <StyledLink>
             <NavIcon />
@@ -15,8 +23,8 @@ const Navbar = ({ toggle }) => {
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
-      </div>
-      <div>
+      </Column1>
+      <Column2>
         <Link href="/" passHref>
           <StyledLink>Home</StyledLink>
         </Link>
@@ -26,7 +34,8 @@ const Navbar = ({ toggle }) => {
         <Link href="/contact" passHref>
           <StyledLink>Contact</StyledLink>
         </Link>
-      </div>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+      </Column2>
     </Nav>
   );
 };
