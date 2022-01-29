@@ -5,6 +5,7 @@ let Sun, Moon;
 
 Sun = Moon = styled.svg`
   height: 26px;
+  width: 26px;
   margin-right: 20px;
   transition: all 0.5s linear;
 `;
