@@ -3,16 +3,21 @@ import Logo from "../Svg/Logo";
 
 export const Nav = styled.nav`
   min-height: 80px;
-  background: #fff;
-  color: #000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 768px) {
     display: flex;
-    justify-content: flex-end;
   }
+`;
+export const Column1 = styled.div`
+  display: flex;
+`;
+
+export const Column2 = styled.div`
+  display: flex;
 `;
 export const MobileIcon = styled.div`
   display: none;
@@ -21,12 +26,12 @@ export const MobileIcon = styled.div`
     display: flex;
     font-size: 26px;
     cursor: pointer;
-    color: #000;
-    margin-right: 20px;
+    margin-left: 20px;
   }
 `;
 export const StyledLink = styled.a`
-  padding: 0rem 2rem;
+  font-size: 20px;
+  padding: 0px 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
