@@ -4,11 +4,7 @@ import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  SidebarWrapper,
-  SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
 } from "./SidebarElements";
 
 function Sidebar({ isOpen, toggle }) {
@@ -17,21 +13,15 @@ function Sidebar({ isOpen, toggle }) {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <Link href={"/"} passHref>
-            <SidebarLink onClick={toggle}>Home</SidebarLink>
-          </Link>
-          <Link href={"/about"} passHref>
-            <SidebarLink onClick={toggle}>About</SidebarLink>
-          </Link>
-        </SidebarMenu>
-        <SideBtnWrap>
-          <Link href={"/contact"} passHref>
-            <SidebarRoute onClick={toggle}>Contact</SidebarRoute>
-          </Link>
-        </SideBtnWrap>
-      </SidebarWrapper>
+      <Link href={"/"} passHref>
+        <SidebarLink onClick={toggle}>Home</SidebarLink>
+      </Link>
+      <Link href={"/about"} passHref>
+        <SidebarLink onClick={toggle}>About</SidebarLink>
+      </Link>
+      <Link href={"/contact"} passHref>
+        <SidebarLink onClick={toggle}>Contact</SidebarLink>
+      </Link>
     </SidebarContainer>
   );
 }
