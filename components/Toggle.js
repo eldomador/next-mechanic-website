@@ -7,7 +7,6 @@ Sun = Moon = styled.svg`
   height: 26px;
   width: 26px;
   margin-right: 20px;
-  transition: all 0.5s linear;
 `;
 
 export const Toggle = ({ theme, toggleTheme }) => {
@@ -21,7 +20,7 @@ export const Toggle = ({ theme, toggleTheme }) => {
           height="48"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#212121"
+          stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -36,7 +35,7 @@ export const Toggle = ({ theme, toggleTheme }) => {
           height="48"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#fff"
+          stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
