@@ -18,6 +18,7 @@ export const LeftColumn = styled.div`
 
 export const RightColumn = styled.div`
   display: flex;
+  align-items: center;
 `;
 export const MobileIcon = styled.div`
   display: none;

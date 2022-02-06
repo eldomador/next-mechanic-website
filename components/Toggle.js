@@ -13,6 +13,7 @@ const SunIcon = styled(Sun)`
 `;
 
 const ThemeIcon = styled.div`
+  height: 26px;
   margin-right: 20px;
   cursor: pointer;
 `;
