@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../Svg/Logo";
+import Logo from "../Icons/Logo";
 
 export const Nav = styled.nav`
   min-height: 80px;
@@ -12,12 +12,13 @@ export const Nav = styled.nav`
     display: flex;
   }
 `;
-export const Column1 = styled.div`
+export const LeftColumn = styled.div`
   display: flex;
 `;
 
-export const Column2 = styled.div`
+export const RightColumn = styled.div`
   display: flex;
+  align-items: center;
 `;
 export const MobileIcon = styled.div`
   display: none;

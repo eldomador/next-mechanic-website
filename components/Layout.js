@@ -4,7 +4,7 @@ import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import React, { useState } from "react";
 import { GlobalStyles, darkTheme, lightTheme } from "../styles/globalStyles";
-import { useDarkMode } from "../styles/useDarkMode";
+import { useTheme } from "../styles/useTheme";
 
 const Container = styled.div`
   height: 100vh;
@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 export default function Layout({ children }) {
-  const [theme, toggleTheme] = useDarkMode();
+  const [theme, toggleTheme] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   const [isOpen, setIsOpen] = useState(false);

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { Toggle } from "../Toggle";
 import {
-  Column1,
-  Column2,
+  LeftColumn,
+  RightColumn,
   MobileIcon,
   Nav,
   NavIcon,
@@ -14,7 +14,7 @@ import {
 const Navbar = ({ toggle, theme, toggleTheme }) => {
   return (
     <Nav>
-      <Column1>
+      <LeftColumn>
         <Link href="/" passHref>
           <StyledLink>
             <NavIcon />
@@ -23,8 +23,8 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
-      </Column1>
-      <Column2>
+      </LeftColumn>
+      <RightColumn>
         <Link href="/" passHref>
           <StyledLink>Home</StyledLink>
         </Link>
@@ -35,7 +35,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
           <StyledLink>Contact</StyledLink>
         </Link>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
-      </Column2>
+      </RightColumn>
     </Nav>
   );
 };
