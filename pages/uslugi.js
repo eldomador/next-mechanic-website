@@ -6,23 +6,24 @@ import {
   TextContainer,
 } from "../components/SectionElements";
 
-Home.title = "Homepage";
-export default function Home() {
+Services.title = "Contact";
+export default function Services() {
   return (
-    <div>
+    <>
       <Section>
         <TextContainer>
-          <Heading>Najlepszy serwis samochodowy w twojej okolicy</Heading>
+          <Heading>Usługi</Heading>
         </TextContainer>
         <ImageContainer>
           <Image
-            src="/Mechanic.PNG"
-            width={1500}
-            height={1500}
-            alt="Mechanik"
+            src="/OilCheck.PNG"
+            layout="responsive"
+            width={300}
+            height={200}
+            alt="Wymiana oleju"
           />
         </ImageContainer>
       </Section>
-    </div>
+    </>
   );
 }
