@@ -13,6 +13,10 @@ export const Section = styled.div`
 export const Heading = styled.h1`
   font-size: 4vw;
   font-weight: 900;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10vw;
+  }
 `;
 
 export const TextContainer = styled.div`
