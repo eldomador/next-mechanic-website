@@ -16,7 +16,7 @@ export default function Home() {
         </TextContainer>
         <ImageContainer>
           <Image
-            src="/Mechanic.PNG"
+            src="/mechanic2.png"
             width={1500}
             height={1500}
             alt="Mechanik"
