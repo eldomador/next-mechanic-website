@@ -3,10 +3,10 @@ import Logo from "../Icons/Logo";
 
 export const Nav = styled.nav`
   min-height: 80px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 2vw;
 
   @media screen and (max-width: 768px) {
     display: flex;

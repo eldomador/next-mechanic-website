@@ -28,11 +28,11 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
         <Link href="/" passHref>
           <StyledLink>Home</StyledLink>
         </Link>
-        <Link href="/about" passHref>
-          <StyledLink>About</StyledLink>
+        <Link href="/uslugi" passHref>
+          <StyledLink>Usługi</StyledLink>
         </Link>
-        <Link href="/contact" passHref>
-          <StyledLink>Contact</StyledLink>
+        <Link href="/kontakt" passHref>
+          <StyledLink>Kontakt</StyledLink>
         </Link>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
       </RightColumn>
