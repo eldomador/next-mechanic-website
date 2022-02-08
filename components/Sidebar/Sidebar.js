@@ -16,11 +16,11 @@ function Sidebar({ isOpen, toggle }) {
       <Link href={"/"} passHref>
         <SidebarLink onClick={toggle}>Home</SidebarLink>
       </Link>
-      <Link href={"/about"} passHref>
-        <SidebarLink onClick={toggle}>About</SidebarLink>
+      <Link href={"/uslugi"} passHref>
+        <SidebarLink onClick={toggle}>Usługi</SidebarLink>
       </Link>
-      <Link href={"/contact"} passHref>
-        <SidebarLink onClick={toggle}>Contact</SidebarLink>
+      <Link href={"/kontakt"} passHref>
+        <SidebarLink onClick={toggle}>Kontakt</SidebarLink>
       </Link>
     </SidebarContainer>
   );
