@@ -16,6 +16,11 @@ const ThemeIcon = styled.div`
   height: 26px;
   margin-right: 20px;
   cursor: pointer;
+
+  :hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const Toggle = ({ theme, toggleTheme }) => {

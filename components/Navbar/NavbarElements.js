@@ -37,8 +37,18 @@ export const StyledLink = styled.a`
   @media screen and (max-width: 768px) {
     display: none;
   }
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const NavIcon = styled(Logo)`
   height: 40px;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
 `;
