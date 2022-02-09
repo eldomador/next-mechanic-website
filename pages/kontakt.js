@@ -1,10 +1,10 @@
-import Image from "next/image";
 import {
   Heading,
   ImageContainer,
   Section,
   TextContainer,
 } from "../components/SectionElements";
+import Mechanic from "../components/Icons/Mechanic";
 
 Contact.title = "Contact";
 export default function Contact() {
@@ -12,16 +12,10 @@ export default function Contact() {
     <>
       <Section>
         <TextContainer>
-          <Heading>Contact</Heading>
+          <Heading>Kontakt</Heading>
         </TextContainer>
         <ImageContainer>
-          <Image
-            src="/OilCheck.PNG"
-            layout="responsive"
-            width={300}
-            height={200}
-            alt="Wymiana oleju"
-          />
+          <Mechanic />
         </ImageContainer>
       </Section>
     </>
