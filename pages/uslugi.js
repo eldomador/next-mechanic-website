@@ -1,4 +1,4 @@
-import BrakeDisc from "../components/Icons/BrakeDisc";
+import ReactPlayer from "react-player/youtube";
 import {
   Heading,
   ImageContainer,
@@ -26,7 +26,10 @@ export default function Services() {
           </List>
         </TextContainer>
         <ImageContainer>
-          <BrakeDisc />
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=pu-Kv94XEtI&ab_channel=PiotrPacyniak"
+            controls="true"
+          />
         </ImageContainer>
       </Section>
     </>
