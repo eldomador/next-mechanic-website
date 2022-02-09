@@ -31,7 +31,21 @@ export const TextContainer = styled.div`
   }
 `;
 
+export const List = styled.ul`
+  list-style-type: square;
+`;
+
+export const ListItems = styled.li`
+  font-size: 2vw;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4vw;
+  }
+`;
+
 export const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
   margin-right: 8vw;
   margin-left: 1vw;
   width: 50%;
