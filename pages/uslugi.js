@@ -16,12 +16,12 @@ export default function Services() {
         <TextContainer>
           <Heading>Usługi</Heading>
           <List>
-            <ListItems>mechanika pojazdowa</ListItems>
-            <ListItems>diagnostyka komputerowa</ListItems>
-            <ListItems>wulkanizacja,</ListItems>
-            <ListItems>serwis klimatyzacji</ListItems>
-            <ListItems>diagnostyka silnika samochodowego</ListItems>
-            <ListItems>Układ kierowniczy</ListItems>
+            <ListItems>Mechanika pojazdowa</ListItems>
+            <ListItems>Diagnostyka komputerowa</ListItems>
+            <ListItems>Wulkanizacja,</ListItems>
+            <ListItems>Serwis klimatyzacji</ListItems>
+            <ListItems>Naprawa układu kierowniczego</ListItems>
+            <ListItems>Diagnostyka silnika samochodowego</ListItems>
             <ListItems>Naprawa skrzyni biegów</ListItems>
           </List>
         </TextContainer>
