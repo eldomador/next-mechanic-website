@@ -19,6 +19,16 @@ export const Heading = styled.h1`
   }
 `;
 
+export const Paragraph = styled.p`
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4vw;
+  }
+`;
+
 export const TextContainer = styled.div`
   margin-left: 8vw;
   margin-right: 1vw;

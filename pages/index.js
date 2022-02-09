@@ -6,7 +6,7 @@ import {
   TextContainer,
 } from "../components/SectionElements";
 
-Home.title = "Homepage";
+Home.title = "Mechanik Krystian Paź Warsztat Auto Serwis Staniwice";
 export default function Home() {
   return (
     <div>
