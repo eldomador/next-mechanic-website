@@ -62,7 +62,7 @@ export const ImageContainer = styled.div`
   height: 100%;
   min-height: 400px;
   @media screen and (max-width: 768px) {
-    margin: 0;
+    margin: 4vh 0;
     width: 80%;
   }
 `;
@@ -74,7 +74,7 @@ export const VideoContainer = styled.div`
   width: 50%;
   height: 100%;
   @media screen and (max-width: 768px) {
-    margin: 0;
+    margin: 4vh 0;
     width: 80%;
   }
 `;
