@@ -29,6 +29,13 @@ export const Paragraph = styled.p`
   }
 `;
 
+export const StyledLink = styled.a`
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
+`;
+
 export const TextContainer = styled.div`
   margin-left: 8vw;
   margin-right: 1vw;
