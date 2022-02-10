@@ -18,15 +18,15 @@ export default function Contact() {
           <Heading>Kontakt</Heading>
           <Paragraph>
             <FiPhone />
-            694 009 052
+            &nbsp; 694 009 052
           </Paragraph>
           <Paragraph>
             <MdOutlinePinDrop />
-            Staniewice 21e 76-113
+            &nbsp; Staniewice 21e 76-113
           </Paragraph>
           <Paragraph>
             <MdOutlineEmail />
-            ystaj@onet.eu
+            &nbsp; ystaj@onet.eu
           </Paragraph>
         </TextContainer>
         <ImageContainer>
