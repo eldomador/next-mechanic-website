@@ -13,6 +13,7 @@ import Link from "next/link";
 
 Contact.title =
   "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice - kontakt";
+Contact.description = "Mechanik Staniewice - okolice sławna";
 export default function Contact() {
   return (
     <>
