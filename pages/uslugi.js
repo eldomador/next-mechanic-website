@@ -1,14 +1,17 @@
-import ReactPlayer from "react-player/youtube";
 import {
   Heading,
   ImageContainer,
   List,
   ListItems,
+  Player,
+  PlayerWrap,
   Section,
   TextContainer,
+  VideoContainer,
 } from "../components/SectionElements";
 
-Services.title = "Usługi";
+Services.title =
+  "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice - Usługi";
 export default function Services() {
   return (
     <>
@@ -25,12 +28,16 @@ export default function Services() {
             <ListItems>Naprawa skrzyni biegów</ListItems>
           </List>
         </TextContainer>
-        <ImageContainer>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=pu-Kv94XEtI&ab_channel=PiotrPacyniak"
-            controls="true"
-          />
-        </ImageContainer>
+        <VideoContainer>
+          <PlayerWrap>
+            <Player
+              url="https://www.youtube.com/watch?v=pu-Kv94XEtI&ab_channel=PiotrPacyniak"
+              width="100%"
+              height="100%"
+              controls="true"
+            />
+          </PlayerWrap>
+        </VideoContainer>
       </Section>
     </>
   );

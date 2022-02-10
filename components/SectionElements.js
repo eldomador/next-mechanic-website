@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import ReactPlayer from "react-player/youtube";
 
 export const Section = styled.div`
   display: flex;
-
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
@@ -60,8 +60,31 @@ export const ImageContainer = styled.div`
   margin-left: 1vw;
   width: 50%;
   height: 100%;
+  min-height: 400px;
   @media screen and (max-width: 768px) {
     margin: 0;
     width: 80%;
   }
+`;
+
+export const VideoContainer = styled.div`
+  margin-top: 4vw;
+  margin-right: 8vw;
+  margin-left: 1vw;
+  width: 50%;
+  height: 100%;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    width: 80%;
+  }
+`;
+
+export const PlayerWrap = styled.div`
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+`;
+export const Player = styled(ReactPlayer)`
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
