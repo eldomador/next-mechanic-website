@@ -3,10 +3,13 @@ import {
   ImageContainer,
   Paragraph,
   Section,
+  StyledLink,
   TextContainer,
 } from "../components/SectionElements";
 import { FiPhone } from "react-icons/fi";
+import { AiOutlineFacebook } from "react-icons/ai";
 import { MdOutlinePinDrop, MdOutlineEmail } from "react-icons/md";
+import Link from "next/link";
 
 Contact.title =
   "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice - kontakt";
@@ -28,6 +31,17 @@ export default function Contact() {
             <MdOutlineEmail />
             &nbsp; ystaj@onet.eu
           </Paragraph>
+          <Link
+            href="https://www.facebook.com/Krystian-Pa%C5%BA-Auto-Serwis-108033610805241"
+            passHref
+          >
+            <StyledLink>
+              <Paragraph>
+                <AiOutlineFacebook />
+                &nbsp; Facebook
+              </Paragraph>
+            </StyledLink>
+          </Link>
         </TextContainer>
         <ImageContainer>
           <iframe
