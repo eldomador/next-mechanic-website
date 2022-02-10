@@ -1,6 +1,5 @@
 import {
   Heading,
-  ImageContainer,
   List,
   ListItems,
   Player,
@@ -12,6 +11,8 @@ import {
 
 Services.title =
   "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice - Usługi";
+Services.description =
+  "Mechanika pojazdowa, Diagnostyka komputerowa, Wulkanizacja, Serwis klimatyzacji, Naprawa układu kierowniczego, Diagnostyka silnika samochodowego, Naprawa skrzyni biegów";
 export default function Services() {
   return (
     <>
