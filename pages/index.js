@@ -7,6 +7,7 @@ import {
 } from "../components/SectionElements";
 
 Home.title = "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice";
+Home.description = "Najlepszy serwis samochodowy w okolicy Sławna";
 export default function Home() {
   return (
     <div>
