@@ -25,7 +25,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
         </MobileIcon>
       </LeftColumn>
       <RightColumn>
-        <Link href="/" passHref>
+        <Link href="/" passHref alt="logo">
           <StyledLink>Home</StyledLink>
         </Link>
         <Link href="/uslugi" passHref>
