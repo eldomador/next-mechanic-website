@@ -6,10 +6,12 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2vw;
+  margin-right: 3vw;
+  margin-left: 2vw;
 
   @media screen and (max-width: 768px) {
     display: flex;
+    margin-left: 3vw;
   }
 `;
 export const LeftColumn = styled.div`
@@ -18,7 +20,7 @@ export const LeftColumn = styled.div`
 
 export const RightColumn = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 `;
 export const MobileIcon = styled.div`
   display: none;

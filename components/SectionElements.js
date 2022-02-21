@@ -48,6 +48,28 @@ export const TextContainer = styled.div`
   }
 `;
 
+export const Button = styled.button`
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 12px 36px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2 ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? "#fff" : "#01BF71")};
+  }
+`;
+
 export const List = styled.ul`
   list-style-type: square;
 `;
@@ -62,7 +84,7 @@ export const ListItems = styled.li`
 
 export const ImageContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-right: 8vw;
   margin-left: 1vw;
   width: 50%;

@@ -14,12 +14,16 @@ const SunIcon = styled(Sun)`
 
 const ThemeIcon = styled.div`
   height: 26px;
-  margin-right: 20px;
   cursor: pointer;
+  margin-left: 6vw;
 
   :hover {
     color: #01bf71;
     transition: 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 20px;
   }
 `;
 

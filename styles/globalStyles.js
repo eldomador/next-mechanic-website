@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   body {
@@ -11,29 +12,37 @@ export const GlobalStyles = createGlobalStyle`
   p {
     line-height: 1.4rem;
   }
+`;
 
-  .btn-primary {
-    background: ${({ theme }) => theme.primary};
+export const Button = styled.button`
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 12px 36px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2 ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ theme }) => theme.text};
     color: ${({ theme }) => theme.body};
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    transition: all .5s linear;
-
   }
 `;
 
 export const lightTheme = {
   body: "#fff",
   text: "#121212",
-  primary: "#6200ee",
 };
 
 export const darkTheme = {
   body: "#121212",
   text: "#fff",
-  primary: "#bb86fc",
 };
