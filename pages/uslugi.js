@@ -1,13 +1,19 @@
+import Mechanic from "../components/Icons/Mechanic";
 import {
   Heading,
-  List,
-  ListItems,
   Player,
   PlayerWrap,
-  Section,
-  TextContainer,
+  SectionService,
+  ServiceCardWrapper,
   VideoContainer,
 } from "../components/SectionElements";
+import {
+  CardH2,
+  CardP,
+  Card,
+  CardImageWrapper,
+  CardIcon,
+} from "../styles/globalStyles";
 
 Services.title =
   "Mechanik Krystian Paź - Warsztat Auto Serwis Staniewice - Usługi";
@@ -16,10 +22,43 @@ Services.description =
 export default function Services() {
   return (
     <>
-      <Section>
-        <TextContainer>
-          <Heading>Usługi</Heading>
-          <List>
+      <SectionService>
+        <Heading>Usługi</Heading>
+        <ServiceCardWrapper>
+          <Card>
+            <CardImageWrapper>
+              <Mechanic />
+            </CardImageWrapper>
+            <CardH2>Naprawa</CardH2>
+            <CardP>
+              Zajmujemy się naprawą: układu kierowniczego, skrzyni biegów,
+              silników. Wykorzystujemy do tego Diagnostykę komputerową.
+            </CardP>
+            <CardIcon />
+          </Card>
+          <Card>
+            <CardImageWrapper>
+              <Mechanic />
+            </CardImageWrapper>
+            <CardH2>Serwis</CardH2>
+            <CardP>
+              W naszej ofercie serwisowej znajduje się wymiana: oleju, filtrów,
+              płynu hamulcowego itp. Oraz serwis klimatyzacji.
+            </CardP>
+            <CardIcon />
+          </Card>
+          <Card>
+            <CardImageWrapper>
+              <Mechanic />
+            </CardImageWrapper>
+            <CardH2>Wulkanizacja</CardH2>
+            <CardP>
+              Nasze usługi Wulkanizacjne obejmują: wymiane opon i kół, wyważanie
+              oraz naprawę opon. Instenej możliwość zakupu nowych opon.
+            </CardP>
+            <CardIcon />
+          </Card>
+          {/* <List>
             <ListItems>Mechanika pojazdowa</ListItems>
             <ListItems>Diagnostyka komputerowa</ListItems>
             <ListItems>Wulkanizacja,</ListItems>
@@ -27,8 +66,8 @@ export default function Services() {
             <ListItems>Naprawa układu kierowniczego</ListItems>
             <ListItems>Diagnostyka silnika samochodowego</ListItems>
             <ListItems>Naprawa skrzyni biegów</ListItems>
-          </List>
-        </TextContainer>
+          </List> */}
+        </ServiceCardWrapper>
         <VideoContainer>
           <PlayerWrap>
             <Player
@@ -39,7 +78,7 @@ export default function Services() {
             />
           </PlayerWrap>
         </VideoContainer>
-      </Section>
+      </SectionService>
     </>
   );
 }
