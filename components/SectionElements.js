@@ -48,28 +48,6 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const Button = styled.button`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 12px 36px;
-  color: inherit;
-  font-size: 16px;
-  font-weight: bold;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2 ease-in-out;
-  text-decoration: none;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#fff" : "#01BF71")};
-  }
-`;
-
 export const List = styled.ul`
   list-style-type: square;
 `;
@@ -91,19 +69,37 @@ export const ImageContainer = styled.div`
   height: 100%;
   min-height: 400px;
   @media screen and (max-width: 768px) {
-    margin: 4vh 0;
+    margin: 4vw 0;
     width: 80%;
   }
 `;
 
+export const SectionService = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+
+export const ServiceCardWrapper = styled.div`
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+  }
+`;
+
 export const VideoContainer = styled.div`
-  margin-top: 4vw;
-  margin-right: 8vw;
-  margin-left: 1vw;
   width: 50%;
   height: 100%;
-  @media screen and (max-width: 768px) {
-    margin: 4vh 0;
+  margin-top: 18vh;
+  margin-bottom: 4vh;
+  @media screen and (max-width: 1150px) {
+    margin-top: 6vh;
     width: 80%;
   }
 `;
